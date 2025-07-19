@@ -1,37 +1,37 @@
-Hello everyone, welcome back to our channel, cybersharks
-
-In this video  you will learn, how to install Golang in Linux system, or say kali Linux. This step is same for all Debian based Linux like kali, parrot or ubuntu also.
 
 
-this is our kali Linux server where we will install Golang, so lets follow the steps shows in .
 
-first check weather the go lang is installed or not, just by typing this command
-since go lang is not installed, we can see the error message shown here.
+	INSTALL GO LANG IN LINUX
+--------------STEPS------------
 
+1. CHECK IF GOLANG IS INSTALLED
+	> go version
 
-since Golang is not installed, we will proceed installation process,
-
-lets update he system first, 
-it will take some time, so lets fast forward the process.
-
-done, updating is done.
-
-next, lets install Golang by this command.
-just press Y, as it will install all required packages. 
-it will take some time, so lets fast forward the process.
-
-Done!! Golang installation is done, 
-
-now lets verify again
-
-well, we can see, the lang is already installed.
+2. IF NOT INSTALLED, 
+	🔹 Option 1: From Kali's Package Manager
+		
+		>sudo apt update
+		>sudo apt install golang
 
 
-since we can easily install Golang using option 1, there is no need to proceed, option 2, 
-but if you cant install go lang by option 1, you can definitely proceed option 2,
+	🔹 Option 2: Install Latest from Official Source
+		1.Download latest Go from https://golang.org/dl/
+		2.Example Latest Version for: Go is 1.25.5:
+		
+			>wget https://go.dev/dl/go1.24.5.linux-amd64.tar.gz
+			>sudo rm -rf /usr/local/go
+			>sudo tar -C /usr/local -xzf go1.24.5.linux-amd64.tar.gz
+		
+		
+		3.Add to PATH (if not already):
+			>echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+			>source ~/.bashrc
+			
+		4. Then verify again:
+			> go version
 
-if you again find any issue, feel free to comment.
+		
 
-well, that's it for now, 
 
-don't forget to like and subscribe our channel
+
+	
